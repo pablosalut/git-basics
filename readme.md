@@ -29,7 +29,30 @@ Se pueden pasar los cambios de una rama a otra utilizando `git merge`.
 
 ## Comandos
 
-git diff hash1 hash2: imprime la diferencia de dos commits.
+**git diff hash1 hash2**: imprime la diferencia de dos commits. 
+
+**git diff**: imprime la diferencia entre lo que tenemos en stage y lo que no guardamos todavía. (Es el equivalente a ir a la seccion de git de visual studio code y hacer click en alguno de los archivos que cambió)
+
+**git reset hash --hard**: vuelve todo al commit indicado.Borra todos los commits después del elegido.
+
+**git reset hash --soft**: vuelve al commit indicado manteniendo los archivos que tengamos en stage (para lo que hayamos hecho git add).
+
+**git checkout hash nombreArchivo**: volvemos al commit indicado pero no se guardan los cambios hasta que no se commitea nuevamente los cambios.(El nombre del archivo es opcional, si no se escribe trae todos los cambios de ese commit.)
+
+## Repositorio Remoto
+
+**git clone url**: trae una copia del repositorio remoto en el directorio de trabajo y crea la base de datos de todo el histórico de git en el repositorio local.
+
+**git push**: envío el head de todos mis commits al repositorio remoto.
+
+**git fetch**: trae todo el historial de cambio al repositorio local pero no cambia el directorio de trabajo. Se debería hacer **git merge** para traer los cambios al directorio de trabajo, pero hacer solo **git pull** resume los dos comandos.
+
+
+
+
+
+
+
 
 
 
