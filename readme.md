@@ -56,7 +56,26 @@ La **cabecera o HEAD** representan la rama y el commit de esa rama donde estamos
 
 **git commit -am "Mensaje"**: atajo para realizar git add y git commit en un solo comando.
 
+## Fusion de dos ramas con contenido distinto en una sola rama final
 
+Teniendo cambios en dos ramas distintas con cambios, una vez agregados al stage y hechos los commits.
+
+Estando en la rama que yo quiero que se conserven los cambios de las dos ramas (por ejemplo master) debo realizar: 
+
+**git merge rama1**: Se debe colocar un mensaje de por que se realizó el merge.
+
+La "rama1" puede borrarse despues de aplicar sus cambios a master, o conservarse para seguir siendo utilizada posteriormente.
+
+### Solución de conflictos.
+
+Cuando en las dos ramas se modifican las mismas lineas, se producirá un conflicto al intentar realizar el merge.
+Lo único que debemos hacer es ir a ese archivo, a esa linea y borrar el código que queremos que se elimine y dejar lo que queremos que se mantenga.
+(Visual studio añade botones para aceptar los cambios entrantes o dejar los originales)
+
+Luego de resolver los conflictos se debe hacer add y commit de los cambios.
+
+
+ 
 
 
 
