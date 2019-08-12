@@ -48,6 +48,17 @@ La **cabecera o HEAD** representan la rama y el commit de esa rama donde estamos
 
 ## Repositorio Remoto
 
+Si queremos indicarle un repositorio remoto a un directorio que ya contiene archivos debemos escribir:
+
+**git remote add origin URL**
+
+Verificar que la URL se haya guardado:
+
+**git remote
+git remote -v**
+
+
+
 **git clone url**: trae una copia del repositorio remoto en el directorio de trabajo y crea la base de datos de todo el histórico de git en el repositorio local.
 
 **git push**: envío el head de todos mis commits al repositorio remoto.
@@ -73,6 +84,11 @@ Lo único que debemos hacer es ir a ese archivo, a esa linea y borrar el código
 (Visual studio añade botones para aceptar los cambios entrantes o dejar los originales)
 
 Luego de resolver los conflictos se debe hacer add y commit de los cambios.
+
+## LLAVES SSH
+
+
+
 
 
  
