@@ -27,6 +27,13 @@ Ramas comunes o estándar: Master(donde vivirá la base del proyecto), experimen
 Se cambia entre ramas utilizando el comando `git checkout nombreRama`.
 Se pueden pasar los cambios de una rama a otra utilizando `git merge`.
 
+**git branch nombre**: crea una nueva rama
+
+**git checkout nombre**: cambiar a otra rama
+
+La **cabecera o HEAD** representan la rama y el commit de esa rama donde estamos trabajando. Por defecto, esta cabecera aparecerá en el último commit de nuestra rama principal. Pero podemos cambiarlo al crear una rama (git branch rama, git checkout -b rama) o movernos en el tiempo a cualquier otro commit de cualquier otra rama.
+
+
 ## Comandos
 
 **git diff hash1 hash2**: imprime la diferencia de dos commits. 
@@ -46,6 +53,8 @@ Se pueden pasar los cambios de una rama a otra utilizando `git merge`.
 **git push**: envío el head de todos mis commits al repositorio remoto.
 
 **git fetch**: trae todo el historial de cambio al repositorio local pero no cambia el directorio de trabajo. Se debería hacer **git merge** para traer los cambios al directorio de trabajo, pero hacer solo **git pull** resume los dos comandos.
+
+**git commit -am "Mensaje"**: atajo para realizar git add y git commit en un solo comando.
 
 
 
