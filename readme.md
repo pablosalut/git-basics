@@ -87,7 +87,38 @@ Luego de resolver los conflictos se debe hacer add y commit de los cambios.
 
 ## LLAVES SSH
 
+Primero debo asegurarme que el email configurado sea el mismo que el de la cuenta de github, gitlab, etc.
 
+**git config --global user.email "email@hotmail.com"**
+
+Estando en el home corremos:
+
+**ssh-keygen -t rsa -b 4096 -C "email@hotmail.com"**
+
+Primera opción, pregunta donde guardar la llave, con un enter guarda en la misma carpeta.
+
+Segunda opción, passphrase: dejarlo vacío.
+
+Tercera opción, contraseña, también puede quedar vacío.
+
+Verificar que el servidor ssh está corriendo: **eval $(ssh-agent -s)**
+
+Debería responder -> Agent pid #numero
+
+En el home debemos escribir: **ssh-add ~/.shh/id_rsa**
+
+En mac: **eval "$(ssh-agent -s)"**
+
+Debemos crear el archivo config en la carpeta .ssh con el siguiente contenido:
+
+```
+Host *
+       AddKeysToAgent yes
+       UseKeychain yes
+       IdentityFile ~/.ssh/id_rsa
+```
+
+En el home debemos escribir: **ssh-add -K ~/.shh/id_rsa**
 
 
 
