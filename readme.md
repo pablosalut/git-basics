@@ -120,6 +120,23 @@ Host *
 
 En el home debemos escribir: **ssh-add -K ~/.shh/id_rsa**
 
+## Tags y Versiones
+
+Un tag se crea copiando el hash de un commit 
+
+**git tag -a v0.1 -m "mensaje del tag" hash**
+
+**git tag** muestra el listado de tags
+
+**git push origin tags** enva los tags creados al repositorio remoto
+
+**git tag -d nombreTag** borra tag localmente
+**git push origin :refs/tags/nombreTag** borra tag del remoto
+
+
+
+
+
 
 
  
