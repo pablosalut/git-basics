@@ -27,7 +27,13 @@ Ramas comunes o estándar: Master(donde vivirá la base del proyecto), experimen
 Se cambia entre ramas utilizando el comando `git checkout nombreRama`.
 Se pueden pasar los cambios de una rama a otra utilizando `git merge`.
 
-**git branch nombre**: crea una nueva rama
+## Manejo de Ramas
+
+**git branch** muestra todas las ramas existentes
+
+**git branch nombreRama** crea una nueva rama a partir de la rama en la que estamos parados
+
+**git push origin nombreRama** envía la rama local al remote
 
 **git checkout nombre**: cambiar a otra rama
 
@@ -56,7 +62,6 @@ Verificar que la URL se haya guardado:
 
 **git remote
 git remote -v**
-
 
 
 **git clone url**: trae una copia del repositorio remoto en el directorio de trabajo y crea la base de datos de todo el histórico de git en el repositorio local.
@@ -134,10 +139,15 @@ Un tag se crea copiando el hash de un commit
 **git push origin :refs/tags/nombreTag** borra tag del remoto
 
 
+## Flujo de Trabajo profesional en git
 
+Al master sólo envío contenido que estoy seguro que est listo para producción.
 
+Una vez que tengo cambios listos en otra rama, me paso a la rama **master** y ahi ejecuto.
 
+**git merge nombreRama** y ahi pasaremos todos los cambios de la rama que indiquemos a la rama master.
 
+después pasaremos a la master y enviaremos los cambios al remote.
 
  
 
