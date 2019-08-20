@@ -149,6 +149,16 @@ Una vez que tengo cambios listos en otra rama, me paso a la rama **master** y ah
 
 después pasaremos a la master y enviaremos los cambios al remote.
 
+ ## Pull Requests
+ 
+ En el mundo profesional la rama master se encuentra bloqueada. No se pueden hacer merges.
+ 
+ En github se llama Pull request, en Gitlab Merge Request: es un lugar intermedio antes de enviar el merge.
+ 
+ PErmite que otros miembros del equipo puedan ver los cambios hechos y aprobarlos o no.
+ 
+ El encargado de realizar los merges normalmente es el lider de equipo o los devOps que son basicamente un administrador del entorno de desarrollo.
+ 
  
 
 
